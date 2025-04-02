@@ -1,0 +1,42 @@
+/* ContactUs.css */
+.contact-us {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .contact-us h2 {
+    color: #4B0082;
+    margin-bottom: 20px;
+  }
+  
+  #contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    color: #4B0082;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+  }
+  
+  .form-group textarea {
+    height: 150px;
+    resize: vertical;
+  }

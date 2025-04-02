@@ -1,0 +1,115 @@
+/* MainPage.css */
+
+/* Banner */
+.banner {
+  position: relative;
+  text-align: center;
+  background-color: #4B0082;
+  padding: 60px 0;
+}
+
+.banner-text {
+  color: white;
+}
+
+.banner-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #E6E6FA;
+  color: #4B0082;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #D8BFD8;
+}
+
+/* Sản Phẩm Nổi Bật */
+.featured-products {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.featured-products h2 {
+  color: #4B0082;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.product p {
+  color: #4B0082;
+  font-weight: bold;
+}
+
+.product button {
+  background-color: #4B0082;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* .product button:hover {
+  background-color: #6A0DAD;
+} */
+
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .product-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+      grid-template-columns: 1fr;
+  }
+  .banner-text h2 {
+      font-size: 1.5em;
+  }
+}

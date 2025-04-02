@@ -1,0 +1,142 @@
+/* Profile.css */
+.personal-info {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .personal-info h2 {
+    color: #4B0082;
+    margin-bottom: 30px;
+    font-size: 2em;
+  }
+  
+  .personal-info .container {
+    max-width: 800px;
+  }
+  
+  /* Info Display Section */
+  .info-display {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  .info-display h3 {
+    color: #4B0082;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+  
+  .info-display p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+  }
+  
+  .info-display strong {
+    color: #4B0082;
+    width: 150px;
+    display: inline-block;
+  }
+  
+  /* Info Edit Section */
+  .info-edit {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  .info-edit h3 {
+    color: #4B0082;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+  
+  .form-row {
+    margin-bottom: 20px;
+  }
+  
+  .form-row label {
+    display: block;
+    color: #4B0082;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .form-row input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+  
+  .cancel-btn {
+    background-color: #ee4d2d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #d43f21;
+  }
+  
+  /* Change Password Section */
+  .change-password {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  .change-password h3 {
+    color: #4B0082;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+  
+  /* Logout Section */
+  .logout-section {
+    text-align: center;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .personal-info .container {
+      padding: 0 15px;
+    }
+  
+    .info-display p {
+      font-size: 1em;
+    }
+  
+    .button-group {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .action-btn,
+    .cancel-btn {
+      width: 100%;
+    }
+  }

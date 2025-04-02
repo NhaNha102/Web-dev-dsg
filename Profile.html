@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile - YSL Fashion</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/Profile.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>YSL Fashion</h1>
+        </div>
+        <div class="user-cart">
+          <a href="../HTML/Cart.html">
+            <i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)
+          </a>
+          <a href="#" id="logout-btn" style="display: none">Logout</a>
+        </div>
+      </div>
+      <div class="nav-search-container">
+        <nav>
+          <div class="container">
+            <a href="../HTML/MainPage.html">Home</a>
+            <a href="../HTML/ContactUs.html">Contact Us</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Personal Info Section -->
+    <section class="personal-info">
+      <div class="container">
+        <h2>Profile</h2>
+        <div class="info-display">
+          <h3>Your Information</h3>
+          <p><strong>Email:</strong> <span id="info-email"></span></p>
+          <p><strong>Full Name:</strong> <span id="info-name"></span></p>
+          <p><strong>Phone Number:</strong> <span id="info-phone"></span></p>
+          <p><strong>Address:</strong> <span id="info-address"></span></p>
+        </div>
+        <div class="info-edit">
+          <h3>Edit Your Information</h3>
+          <form id="info-form">
+            <div class="form-row">
+              <label for="edit-name">Full Name:</label>
+              <input type="text" id="edit-name" name="name" />
+            </div>
+            <div class="form-row">
+              <label for="edit-phone">Phone Number:</label>
+              <input type="text" id="edit-phone" name="phone" />
+            </div>
+            <div class="form-row">
+              <label for="edit-address">Address:</label>
+              <input type="text" id="edit-address" name="address" />
+            </div>
+            <div class="button-group">
+              <button type="submit" class="action-btn">Save Changes</button>
+              <button type="button" id="cancel-btn" class="cancel-btn">
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="change-password">
+          <h3>Change Password</h3>
+          <form id="password-form">
+            <div class="form-row">
+              <label for="current-password">Current Password:</label>
+              <input
+                type="password"
+                id="current-password"
+                name="current-password"
+              />
+            </div>
+            <div class="form-row">
+              <label for="new-password">New Password:</label>
+              <input type="password" id="new-password" name="new-password" />
+            </div>
+            <div class="form-row">
+              <label for="confirm-password">Confirm New Password:</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+              />
+            </div>
+            <div class="button-group">
+              <button type="submit" class="action-btn">Change Password</button>
+            </div>
+          </form>
+        </div>
+        <div class="logout-section">
+          <button id="logout-section-btn" class="action-btn">Logout</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>Email: <a href="mailto:support@yslfashion.com">support@yslfashion.com</a> | Hotline: <a href="tel:0708123456">0708 123 456</a></p>
+        <p><a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+        <p>YSL Fashion - Address: 456 Truong Chinh Street, Ho Chi Minh City</p>
+      </div>
+    </footer>
+
+    <!-- Import JavaScript files -->
+    <script src="../Js/script.js"></script>
+  </body>
+</html>
